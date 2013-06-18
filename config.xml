@@ -14,9 +14,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Test Step,min,max,avg,last,cnt,tps,bytes,bps,err,rat&quot; &gt; log/LoadTest_1-statistics.txt
-echo &quot;validateLogin,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18&quot; &gt;&gt; log/LoadTest_1-statistics.txt
-echo &quot;TestCase:,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18&quot; &gt;&gt; log/LoadTest_1-statistics.txt
+      <command>echo &quot;Test Step,min,max,avg,last,cnt,tps,bytes,bps,err,rat&quot; &gt; LoadTest_1-statistics.txt
+echo &quot;validateLogin,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18&quot; &gt;&gt; LoadTest_1-statistics.txt
+echo &quot;TestCase:,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18&quot; &gt;&gt; LoadTest_1-statistics.txt
 </command>
     </hudson.tasks.Shell>
   </builders>
@@ -28,7 +28,7 @@ echo &quot;TestCase:,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18
           <yaxis>response time (ms)</yaxis>
           <series>
             <hudson.plugins.plot.CSVSeries>
-              <file>log/LoadTest_1-statistics.txt</file>
+              <file>LoadTest_1-statistics.txt</file>
               <label></label>
               <fileType>csv</fileType>
               <strExclusionSet>
@@ -54,7 +54,7 @@ echo &quot;TestCase:,122889,385324,277412.4,385324,600,1.54,3950360,10181,112,18
           <yaxis></yaxis>
           <series>
             <hudson.plugins.plot.CSVSeries>
-              <file>log/LoadTest_1-statistics.txt</file>
+              <file>LoadTest_1-statistics.txt</file>
               <label></label>
               <fileType>csv</fileType>
               <strExclusionSet>
